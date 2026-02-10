@@ -9,4 +9,5 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-        return render_template("index.html")      
+        name_data = 'Jackson'
+        return render_template("index.html", name=name_data)    

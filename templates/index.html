@@ -1,18 +1,30 @@
 <DOCTYPE html>
 <html>
 
-<head>
+<head> 
 
     <meta charset=""utf-8>
-
+       <meta charset ="utf-8">
+    <link rel="stylesheet" href={{ url_for('static', filename ='style.css') }}>
 </head>
 
 
+ 
+
 <body>
 
-    <h1>My First Flask App</h1>
 
-    <p>paragraphparagraphparagraph</p>
+
+    <h1>My first Flask </h1>
+
+
+    {% if name %}
+    <p>Hello, {{name}}!</p>
+
+    {% else %}
+    <p>Hello, neighbor.</p>
+
+    {% endif %}
 
 </body>
 
