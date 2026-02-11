@@ -10,4 +10,12 @@ app = Flask(__name__)
 @app.route("/")
 def index():
         name_data = 'Jackson'
-        return render_template("index.html", name=name_data)    
+        year_data = 2026
+        favorites_list = ['Stardew Valley', 'The Sims', 'BG3', 'Pokemon']
+        ratings_dict = {
+                        'The Sims':'great',
+                        'BG3':'good',
+                        'Stardew Valley':'solid',
+                        'Pokemon': 'okay',
+        }
+        return render_template("index.html", name=name_data, year=year_data, favorites=favorites_list, ratings=ratings_dict )    
