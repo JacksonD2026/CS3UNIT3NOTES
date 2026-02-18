@@ -1,4 +1,13 @@
+:root {
+    --accent: purple;
+    --accent-lt: pink;
+    --accent-dk: yellow; 
+}
+
+
 body {
+    color: var(--accent-dk);
+    background: var(--accent-lt);
     background: hotpink;
 }
 
@@ -13,4 +22,11 @@ p{
     font-weight: bold;
     padding: 10px;
     border: 2px solid greenyellow;
+}
+
+footer {
+    background: var(--accent-dk);
+    color: white;
+    text-align:center;
+    font-size: 2rem;
 }
